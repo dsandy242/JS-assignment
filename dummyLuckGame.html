@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>Hello Welcome JavaScript<br></head>
+<body>
+<script>
+function chances(num)
+{
+    var b=Math.floor(Math.random()*(20-1))+1;
+    var c=[];
+    var i=0;
+ while(i<num)
+{    
+    var d = prompt("give a number");
+    if(isNaN(d)|| d=='')
+    {
+    prompt("please Give a number");
+    i--;
+    }
+    else if(b==d)
+    {
+    document.write("You Won the GAME"+"<br>");
+    c.push(d);
+    break;
+    }
+    else{
+       c.push(d);
+     }
+     i++;
+}
+document.write("You Loose Your Chance"+"<br>");
+document.write("Given Values:"+c+"<br>");
+document.write("LUCKY Number:"+b+"<br>");
+document.write("Game Over"+"<br>");
+}
+chances(3)
+</script>
+</body>
+</html>
